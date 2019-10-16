@@ -1,0 +1,90 @@
+.content {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.filter-container {
+    margin-bottom: 10px;
+}
+
+.filter-container label {
+    margin-bottom: 0;
+    vertical-align: bottom;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form-field {
+    display: inline-block;
+    width: 70px;
+}
+
+.form-label {
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.form-input {
+    width: 200px;
+    display: inline-block;
+}
+
+.contact-table {
+    width: 700px;
+}
+
+.select-all-label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+.select-all {
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+
+.select-me-label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
+}
+
+.error-message {
+    color: red;
+}
+
+.server-error-message-container {
+    color: red;
+    margin-top: 40px;
+}
+
+.input-error {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+[v-cloak] {
+    display: none;
+}
