@@ -69,16 +69,6 @@ new Vue({
             self.validation = false;
         },
 
-        deleteContact: function () {
-            var contact = new Contact(this.firstName, this.lastName, this.phone);
-            $.ajax({
-                type: "POST",
-                url: "/phonebook/delete",
-                data: JSON.stringify(contact)
-            })
-        },
-
-
         loadData: function () {
             var self = this;
 
@@ -86,6 +76,9 @@ new Vue({
                 var contactListFormServer = JSON.parse(response);
                 self.rows = self.convertContactList(contactListFormServer);
             });
+        },
+        deleteCont: function () {
+            
         }
     },
     computed: {

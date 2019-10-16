@@ -4,7 +4,6 @@ import ru.academit.kashirin.coverter.ContactConverter;
 import ru.academit.kashirin.coverter.ContactValidationConverter;
 import ru.academit.kashirin.dao.ContactDao;
 import ru.academit.kashirin.service.ContactService;
-
 /**
  * Created by Anna on 14.06.2017.
  */

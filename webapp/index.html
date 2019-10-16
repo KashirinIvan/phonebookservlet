@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<html lang="" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8"/>
@@ -55,15 +55,14 @@
                 <td v-text="row.firstName"></td>
                 <td v-text="row.phone"></td>
                 <td>
-                    <button class="btn btn-primary" type="button" v-on:click="deleteContact">Удалить</button>
+                    <button class="btn btn-primary" type="button" v-on:click="deleteCont">Удалить</button>
                 </td>
             </template>
-
         </tr>
         </tbody>
     </table>
 
-    <button type="button" class="btn btn-primary" v-on:click="deleteContact">Удалить выбранные</button>
+    <button type="button" class="btn btn-primary">Удалить выбранные</button>
 
     <br>
 

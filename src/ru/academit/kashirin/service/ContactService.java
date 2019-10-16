@@ -1,9 +1,8 @@
 package ru.academit.kashirin.service;
 
 import ru.academit.kashirin.PhoneBook;
-import ru.academit.kashirin.model.Contact;
 import ru.academit.kashirin.dao.ContactDao;
-
+import ru.academit.kashirin.model.Contact;
 import java.util.List;
 
 
@@ -63,6 +62,7 @@ public class ContactService {
             contactDao.delete(contact);
         }
         return contactValidation;
+
     }
 
     public List<Contact> getAllContacts() {

@@ -2,10 +2,10 @@ package ru.academit.kashirin.servlet;
 
 import ru.academit.kashirin.PhoneBook;
 import ru.academit.kashirin.coverter.ContactConverter;
+import ru.academit.kashirin.coverter.ContactValidationConverter;
 import ru.academit.kashirin.model.Contact;
 import ru.academit.kashirin.service.ContactService;
 import ru.academit.kashirin.service.ContactValidation;
-import ru.academit.kashirin.coverter.ContactValidationConverter;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
