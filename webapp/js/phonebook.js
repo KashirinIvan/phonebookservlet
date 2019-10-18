@@ -68,7 +68,18 @@ new Vue({
             self.phone = "";
             self.validation = false;
         },
-
+        deleteContact: function () {
+            var self = this;
+            var index = this.$data.rows.push() - 1;
+            var contact = this.rows[index];
+            $.ajax({
+                type: "POST",
+                url: "/phonebook/delete",
+                data: JSON.stringify(contact)
+            }).always(function () {
+                self.loadData();
+            });
+        },
         loadData: function () {
             var self = this;
 
@@ -77,11 +88,9 @@ new Vue({
                 self.rows = self.convertContactList(contactListFormServer);
             });
         },
-        deleteCont: function () {
-            
-        }
     },
     computed: {
+
         firstNameError: function () {
             if (this.firstName) {
                 return {
@@ -142,4 +151,5 @@ new Vue({
         this.loadData();
     }
 });
+
 

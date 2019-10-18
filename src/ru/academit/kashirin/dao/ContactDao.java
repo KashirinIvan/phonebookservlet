@@ -35,7 +35,11 @@ public class ContactDao {
         contactList.add(contact);
     }
 
-    public void delete(Contact contact){
-        contactList.remove(contact);
+    public void delete(Contact contact) {
+        for (int i = 0; i < contactList.size(); i++) {
+            if (contactList.get(i).getId() == (contact.getId())) {
+                contactList.remove(i);
+            }
+        }
     }
 }
